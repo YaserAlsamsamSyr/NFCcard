@@ -6,11 +6,6 @@ use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\EmpProfileController;
 
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
-
-//
 Route::get('/empProfile/openLogin',[EmpProfileController::class, 'openLogin'])->name('empLogin');
 Route::post('/empProfile/login',[EmpProfileController::class, 'login'])->name('empProfile');
 Route::get('/empProfile',[EmpProfileController::class, 'openProfile'])->name('profile');

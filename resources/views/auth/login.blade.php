@@ -1,24 +1,25 @@
 <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
-
+    <p style="color:white;">رابط تسجيل دخول الموظف  url/empProfile/login</p>
     <form method="POST" action="{{ route('login') }}" dir="rtl">
         @csrf
 
         <!-- Email Address -->
         <div>
             <x-input-label for="email" :value="__('الحساب')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
+            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" value="ys@gmail.com" required autofocus autocomplete="username" />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
         <!-- Password -->
         <div class="mt-4">
-            <x-input-label for="password" :value="__('كلمة سر')" />
+            <x-input-label for="password" :value="__('كلمة سر هي yaser123')" />
 
             <x-text-input id="password" class="block mt-1 w-full"
                             type="password"
                             name="password"
+                            
                             required autocomplete="current-password" />
             <x-input-error :messages="$errors->get('password')" class="mt-2" />
         </div>
