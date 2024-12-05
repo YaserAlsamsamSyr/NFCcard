@@ -18,6 +18,7 @@
                     <a href="/employee"><button class="btn btn-outline-info">عرض الموظفين</button></a><br>
                     <a href="/employee/create"><button class="btn btn-outline-success">أضافة موظف</button></a><br>
                     <a href="{{  route('profile.edit') }}"><button class="btn profile-btn">ملف الشخصي</button></a><br>
+                    <a href="{{  route('empLogin') }}"><button class="btn profile-btn">صفحة الموظف</button></a><br>
                         <form action="{{ route('logout') }}" method="post">
                             @csrf
                             <button type="submit" class="btn btn-outline-secondary" >تسجيل الخروج</button>

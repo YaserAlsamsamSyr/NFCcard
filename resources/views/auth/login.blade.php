@@ -1,7 +1,6 @@
 <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
-    <p style="color:white;">رابط تسجيل دخول الموظف  url/empProfile/login</p>
     <form method="POST" action="{{ route('login') }}" dir="rtl">
         @csrf
 
